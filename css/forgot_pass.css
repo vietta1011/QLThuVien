@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../picture/thuvien.jpg');
+    background-size: cover;
+}
+main{
+    margin-top: 250px;
+    min-height: 300px;
+    padding: 7.5px 15px;
+}
+.forgot-container{
+    text-align: center;
+}
+.forgot{
+    padding-top: 20px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 15px;
+    border: 2px dotted #cccccc;
+    border-radius: 10px;
+}
+.forgot h2{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box input{
+    padding: 10px 25px;
+    width: 70%;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-size: 18px;
+}.btn-box{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-box button{
+    width: 40%;
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    background-color: #009999;
+    outline: none;
+    border: none; 
+}
+.btn-box button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 21px;
+}
+.btn-box button:hover{
+    background-color: #acacac;
+}   

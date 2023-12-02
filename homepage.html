@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./icon/fontawesome-free-6.2.0-web/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="main">
+    <header class="header">
+      <div class="nav__header">
+        <nav>
+          <div class="toggle__menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <h1> Library Management</h1>
+          <ul class="navbar__list">
+            <li class="list__page"><a href="./home.html"><i class="fa-solid fa-house nav-icon"></i>Trang Chủ</a></li>
+            <li class="list__page"><a href="./department.html"><i class="fa-solid fa-users nav-icon"></i>Quản lý người đọc</a></li>
+            <li class="list__page"><a href="./information.html"><i class="fa-solid fa-book nav-icon"></i>Quản lý đầu sách</a></li>
+            <li class="list__page"><a href=""><i class="fa-solid fa-phone nav-icon"></i>Thông tin liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="admin__login">
+            
+        <a href="./log_in.html" class="login">
+            <i class="fa-solid fa-user"></i>
+            Admin</a>
+     </div>
+    </header>
+    <div class="content">
+      <div class="container-detail">
+        <div class="container-homepage">
+          <div class="search">
+            <div class="search-title">
+              <span style="margin: 10px 10px;">
+                Tra cứu thông tin
+              </span>
+            </div>
+            <div class="detail-label">
+              <label class="label-search1">Tên:</label>
+              <input type="text" class="form-control search-text" placeholder="search name">
+            </div>
+            <div class="detail-label">
+              <label class="label-search1">Tác giả:</label>
+              <input type="text" class="form-control search-text" placeholder="search name">
+            </div>
+            <button type="button" id="search" class="btn btn-primary"><img src="./img/search.png"> Tìm
+              kiếm</button>
+          </div>
+          <div class="action">
+            <button type="button" class="btn btn-primary ct " data-bs-toggle="modal" data-bs-target="#modelAdd"><img
+                src="./img/icons8_add.png"> Thêm mới </button>
+            <button type="button" id="edit" class="btn btn-primary ct " data-bs-toggle="modal"
+              data-bs-target="#modelEdit"><img src="./img/icons8_edit.png"> Chỉnh sửa </button>
+            <button type="button" id="delete" class="btn btn-primary ct "><img src="./img/icons8_Delete.png">
+              Xóa </button>
+            <button type="button" id="reload" class="btn btn-primary ct"><img src="./img/icons8_refresh.png">
+              Tải lại </button>
+          </div>
+          <!--add hiển thị-->
+          <div class="modal" id="modelAdd" tabindex="-1" aria-labelledby="modelAddLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content action">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modelAddLabel">Thêm mới ấn phẩm</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="detail-label">
+                    <label class="label-search">Tên ấn phẩm</label>
+                    <input type="text" class="form-control text-modal" placeholder="">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Tên tác giả</label>
+                    <input type="text" class="form-control text-modal" placeholder="">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Nhà xuất bản</label>
+                    <input type="text" class="form-control text-modal" placeholder="">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Số trang</label>
+                    <input type="text" class="form-control text-modal" placeholder="">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Số lượng</label>
+                    <input type="text" class="form-control text-modal" placeholder="">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Cho mượn</label>
+                    <input type="text" class="form-control text-modal" placeholder=" ">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Ghi chú</label>
+                    <input type="text" class="form-control text-modal" placeholder="">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng</button>
+                  <button type="button" id="addBook" class="btn btn-primary">Lưu ấn phẩm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--ket thuc-->
+          <!--edit modal hiển thị-->
+          <div class="modal" id="modelEdit" tabindex="-1" aria-labelledby="modelEditLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content action">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modelEditLabel">Chỉnh sửa ấn phẩm</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="detail-label">
+                    <label class="label-search">Tên ấn phẩm</label>
+                    <input type="text" class="form-control text-modal">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Tên tác giả</label>
+                    <input type="text" class="form-control text-modal">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Nhà xuất bản</label>
+                    <input type="text" class="form-control text-modal">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Số trang</label>
+                    <input type="text" class="form-control text-modal">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Số lượng</label>
+                    <input type="text" class="form-control text-modal">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Cho mượn</label>
+                    <input type="text" class="form-control text-modal">
+                  </div>
+                  <div class="detail-label">
+                    <label class="label-search">Ghi chú</label>
+                    <input type="text" class="form-control text-modal">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" id="addBook" class="btn btn-primary">Lưu ấn phẩm</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--ket thuc-->
+          </div>
+          <div class="information">
+            <div>
+              <span class="information-title">
+                Thông tin về ấn phẩm
+              </span>
+              <div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Check</th>
+                      <th class="table-book" scope="col">Tên </th>
+                      <th class="table-author" scope="col">Tác giả</th>
+                      <th class="table-publisger" scope="col">Nhà suất bản</th>
+                      <th class="table-pages" scope="col">Số trang</th>
+                      <th class="table-amountr" scope="col">Số lượng</th>
+                      <th class="table-lend" scope="col">Cho mượn</th>
+                      <th class="table-note" scope="col">Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>Thần thoại hi lạp</td>
+                      <td>Phan Ngọc</td>
+                      <td>Văn hóa - Thông tin</td>
+                      <td class="table2-pages-amountr-lend">240</td>
+                      <td class="table2-pages-amountr-lend">3</td>
+                      <td class="table2-pages-amountr-lend">2</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>Dạy học - Từ truyền thống đến hiện đại (Tập 1)</td>
+                      <td>Đặng Quốc Bảo - Nguyễn Thị Mỹ Lộc - Phạm Minh Giản - Nguyễn Quang Đông Thành</td>
+                      <td>NXB Đại học quốc gia Hà Nội</td>
+                      <td class="table2-pages-amountr-lend">411</td>
+                      <td class="table2-pages-amountr-lend">3</td>
+                      <td class="table2-pages-amountr-lend">2</td>
+                      <td></td>
+
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>Giáo trình quản trị Logistics</td>
+                      <td>Đặng Đình Đào</td>
+                      <td>NXB Lao động xã hội</td>
+                      <td class="table2-pages-amountr-lend">311</td>
+                      <td class="table2-pages-amountr-lend">3</td>
+                      <td class="table2-pages-amountr-lend">2</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>Dragon Ball (tập 5)</td>
+                      <td>Akira Toriyama</td>
+                      <td>NXB Kim Đồng</td>
+                      <td class="table2-pages-amountr-lend">192</td>
+                      <td class="table2-pages-amountr-lend">4</td>
+                      <td class="table2-pages-amountr-lend">2</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>Giáo trình Kinh doanh kho và bao bì</td>
+                      <td>Hoàng Minh Đường</td>
+                      <td>NXB Giáo dục</td>
+                      <td class="table2-pages-amountr-lend">232</td>
+                      <td class="table2-pages-amountr-lend">3</td>
+                      <td class="table2-pages-amountr-lend">2</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>Giáo trình Quản trị tác nghiệp</td>
+                      <td>Nguyễn Thành Hiếu</td>
+                      <td> NXB Đại học Kinh tế Quốc dân</td>
+                      <td class="table2-pages-amountr-lend">632</td>
+                      <td class="table2-pages-amountr-lend">5</td>
+                      <td class="table2-pages-amountr-lend">2</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>One Piece (Tập 70)</td>
+                      <td>Eiichiro Oda</td>
+                      <td>NXB Kim Đồng</td>
+                      <td class="table2-pages-amountr-lend">208</td>
+                      <td class="table2-pages-amountr-lend">10</td>
+                      <td class="table2-pages-amountr-lend">4</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>Từ Điển Tiếng “Em”</td>
+                      <td>Khotudien</td>
+                      <td>NXB Phụ Nữ Việt Nam</td>
+                      <td class="table2-pages-amountr-lend">240</td>
+                      <td class="table2-pages-amountr-lend">6</td>
+                      <td class="table2-pages-amountr-lend">2</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>Qua Một Khúc Sông</td>
+                      <td>Võ Thu Hương</td>
+                      <td>NXB Hội Nhà Văn</td>
+                      <td class="table2-pages-amountr-lend">256</td>
+                      <td class="table2-pages-amountr-lend">8</td>
+                      <td class="table2-pages-amountr-lend">1</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" id="" name="" value=""></th>
+                      <td>Căn Cước</td>
+                      <td>Milan Kundera</td>
+                      <td>NXB Hội Nhà Văn</td>
+                      <td class="table2-pages-amountr-lend">176</td>
+                      <td class="table2-pages-amountr-lend">12</td>
+                      <td class="table2-pages-amountr-lend">5</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./jquery.min.js"></script>
+  <script src="./bootstrap.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

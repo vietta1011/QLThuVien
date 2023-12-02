@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./base.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="nav__header">
+                <nav >    
+                    <div class="toggle__menu">
+                        <i class="fa-solid fa-bars"></i>
+                     </div>
+                     <h1> Library Management</h1>
+                       <ul class="navbar__list">
+                         <li class="list__page"><a href=""><i class="fa-solid fa-house nav-icon"></i>Trang Chủ</a></li>
+                         <li class="list__page"><a href=""><i class="fa-solid fa-users nav-icon"></i>Quản lý người Đọc</a></li>
+                         <li class="list__page"><a href=""><i class="fa-solid fa-book nav-icon"></i>Quản lý đầu sách</a></li>
+                         <li class="list__page"><a href="#footer"><i class="fa-solid fa-phone nav-icon"></i>Thông tin liên hệ</a></li>
+                         <li class="list__page" style="margin: 50px 0 0 0;"><a href=""><i class="fa-solid fa-right-from-bracket nav-icon"></i>Log Out</a></li>
+                       </ul> 
+                </nav>
+            </div>
+            <div class="admin__login">
+            
+                <a href="" class="login">
+                    <i class="fa-solid fa-user"></i>
+                    Admin</a>
+             </div>
+           </header>
+           <div class="content">
+            <div class="container">
+                <div class="profile">
+                    <h2 class="profile__title">
+                        Thông tin admin
+                    </h2>
+                    <a href="" class="update__profile">
+                        Cập nhật hồ sơ cá nhân
+                    </a>
+            </div>
+           </div>
+    </div>
+    <script>
+        const nav = document.querySelector('nav');
+        const toggle__menu = document.querySelector('.toggle__menu');
+        const content = document.querySelector('.content');
+
+        toggle__menu.onclick = function () {
+          nav.classList.toggle('hide');
+          content.classList.toggle('expand')
+        }
+    </script>
+</body>
+</html>

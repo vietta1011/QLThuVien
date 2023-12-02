@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../picture/thuvien.jpg');
+    background-size: cover;
+}
+main{
+    margin-top: 150px;
+    min-height: 300px;
+    padding: 7.5px 15px;
+}
+.signup_container{
+    text-align: center;
+}
+.signup{
+    padding-top: 20px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 15px;
+    border: 2px dotted #cccccc;
+    border-radius: 10px;
+}
+.signup h2{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box input{
+    padding: 10px 25px;
+    width: 70%;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-size: 18px;
+}
+.signup h4{
+    text-align: left;
+    margin-left: 101px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+.bd{
+    text-align: left;
+    margin-right: 240px;
+    margin-top: 6.5px;
+    float: right;
+}
+.bd input {
+    padding: 5px;
+}
+.gen{
+    float:right;
+    margin-right: 360px;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.gen label{
+    font-size: 17px;
+}
+.btn-box{
+    text-align: center;
+    margin-top: 25px;
+}
+.btn-box button{
+    width: 30%;
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    background-color: #009999;
+    outline: none;
+    border: none; 
+}
+.btn-box button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 21px;
+}
+.btn-box button:hover{
+    background-color: #acacac;
+}
+p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+p a{
+    text-decoration: none;
+    color: blue;
+}
+p a:hover{
+    color: red;
+}

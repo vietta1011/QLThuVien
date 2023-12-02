@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('./img/thuvine.jpg');
+    background-size: cover;
+}
+main{
+    margin-top: 150px;
+    padding: 7.5px 15px;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+}
+.login{
+    padding-top: 20px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 15px;
+    border: 2px dotted #cccccc;
+    border-radius: 10px;
+    
+    text-align: center;
+}
+.login h2{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+.input-box{
+    margin-bottom: 10px;
+}
+.input-box input{
+    padding: 10px 25px;
+    width: 70%;
+    border: 1px solid #cccccc;
+    outline: none;
+    font-size: 18px;
+}
+.checkbox{
+    text-align: left;
+    margin-left: 100px;
+}
+.checkbox label{
+    font-size: 18px;
+}
+.btn-box{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-box button{
+    width: 30%;
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    background-color: #009999;
+    outline: none;
+    border: none; 
+}
+.btn-box button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 21px;
+}
+.btn-box button:hover{
+    background-color: #acacac;
+}
+p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+p a{
+    text-decoration: none;
+    color: blue;
+}
+p a:hover{
+    color: red;
+}
+#footer{
+    margin-top: 30px;
+    border-top: 4px groove rgb(236, 225, 119);
+    padding: 4rem 8rem;
+    clear: both;
+    /*  */
+    
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+.footer-content a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+    margin-top: -20px;
+      
+}
+.footer-logo {
+    width: 120px;
+ 
+    
+}
+.footer-rule {
+    margin: 3rem 2rem;
+}
+.footer-text {
+    text-decoration: none;
+    color: #000;
+}
+.footer-text:hover {
+    text-decoration: none;
+}
+.footer-infor {
+    margin: -1rem 2rem;
+}
+.footer-text, .footer-infor p {
+    font-size: 15px;
+    margin: 5px 0 ;
+}

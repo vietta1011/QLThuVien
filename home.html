@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="nav__header">
+                <nav >    
+                    <div class="toggle__menu">
+                        <i class="fa-solid fa-bars"></i>
+                     </div>
+                     <h1> Library Management</h1>
+                      
+                       <ul class="  navbar__list">
+                         <li class=""><a href=""></a></li>
+                         <li class="list__page"><a href=""><i class="fa-solid fa-house nav-icon"></i>Trang Chủ</a></li>
+                         <li class="list__page"><a href="./department.html"><i class="fa-solid fa-users nav-icon"></i>Quản lý người Đọc</a></li>
+                         <li class="list__page"><a href="./homepage.html"><i class="fa-solid fa-book nav-icon"></i>Quản lý đầu sách</a></li>
+                         <li class="list__page"><a href="#footer"><i class="fa-solid fa-phone nav-icon"></i>Thông tin liên hệ</a></li>
+                         <li class="list__page" style="margin: 50px 0 0 0;"><a href=""><i class="fa-solid fa-right-from-bracket nav-icon"></i>Log Out</a></li>
+                       </ul> 
+                </nav>
+            </div>
+            <div class="admin__login">
+            
+                <a href="./log_in.html" class="login">
+                    <i class="fa-solid fa-user"></i>
+                    Admin</a>
+             </div>
+             
+            
+           </header>
+           <div class="content">
+            <div class="search">
+                Tìm kiếm 
+               <input type="text" name="" placeholder="Nhập thông tin" id="" required class="form-text ">
+             </div>
+            <div class="container">
+                <div class="dashboard">
+                    <h2 class="dashboard__title">
+                        Dashboard
+                    </h2>
+                    <div class="dashboard__list"> 
+                        <div class="dashboard__reader dash-pos">
+                            <h3 class="dashboard__list-text text-h">3</h3>
+                            <p class="dashboard__list-text text-p">Người Đọc </p>
+                            <i class="fa-solid fa-user-plus logo__dashboard"></i>
+                            <div class="dash__link-infor"></div>
+                            <a href="" class="dashbord__list-text text-a">More infor <i class="fa-solid fa-diamond-turn-right"></i></a>
+                         </div>
+                         <div class="dashboard__books dash-pos">
+                            <h3 class="dashboard__list-text text-h">187</h3>
+                           <p class="dashboard__list-text text-p">Số Sách</p>
+                           <i class="fa-solid fa-book logo__dashboard"></i>
+                           <div class="dash__link-infor"></div>
+                           <a href="" class="dashbord__list-text text-a">More infor <i class="fa-solid fa-diamond-turn-right"></i></a>
+                        </div>
+                        <div class="dashboard__booksliquidated dash-pos ">
+                            <h3 class="dashboard__list-text text-h">1</h3>
+                           <p class="dashboard__list-text text-p">Số sách đã thanh toán</p>
+                           <i class="fa-solid fa-book logo__dashboard"></i>
+                           <div class="dash__link-infor"></div>
+                           <a href="" class="dashbord__list-text text-a">More infor <i class="fa-solid fa-diamond-turn-right"></i></a>
+        
+                        </div>
+                        <div class="dashboard__booksborrow dash-pos">
+                           <h3 class="dashboard__list-text text-h">2</h3>
+                           <p class="dashboard__list-text text-p">Số sách đang cho mượn</p>
+                           <i class="fa-solid fa-chart-pie logo__dashboard"></i>
+                           <div class="dash__link-infor"></div>
+                           <a href="" class="dashbord__list-text text-a">More infor <i class="fa-solid fa-diamond-turn-right"></i></a>
+                         </div>
+                    </div>
+                    <div class="statistical">
+                        <div class="statistical__table">
+                            <h4 class="statistical__table-text">Sách mới nhập</h4>
+                            <table>
+                              <thead>
+                                <th>#</th>
+                                <th>Tên sách</th>
+                                <th>Số lượng</th>
+                                <th>mã code</th>
+                                <th>ngày nhập</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>Toán rời rạc</td>
+                                  <td>56</td>
+                                  <td>#1768</td>
+                                  <td>2022-05-02</td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>Đại Số Tuyến Tính</td>
+                                  <td>67</td>
+                                  <td>#1945</td>
+                                  <td>2022-05-12</td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>Kĩ Thuật Lập Trình</td>
+                                  <td>47</td>
+                                  <td>#2306</td>
+                                  <td>2022-05-17</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                        <div class="statistical__table">
+                            <h4 class="statistical__table-text">Người đọc đang mượn</h4>
+                            <table>
+                              <thead>
+                                <th>#</th>
+                                <th>Tên người đọc</th>
+                                
+                                <th>Tên sách</th>
+                                <th>Ngày mượn</th>
+                                <th>Ngày hết hạn</th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>32</td>
+                                  <td>Mạnh</td>
+                                  <td>Triết Học Mác-Lênin</td>
+                                  <td>2022-05-29</td>
+                                  <td>2022-06-15</td>
+                                 
+                                </tr>
+                                <tr>
+                                  <td>03</td>
+                                  <td>Dũng</td>
+                                  <td>Cafe Buổi Sáng</td>
+                                  <td>2022-06-03</td>
+                                  <td>2022-08-03</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td>34</td>
+                                  <td>Tạ Việt</td>
+                                  <td>Sách Gì Cũng Được</td>
+                                  <td>2022-09-12</td>
+                                  <td>2022-10-12</td>
+                                  
+                              </tbody>
+                            </table>
+            
+                        </div>
+                        <div class="statistical__table">
+                            <h4 class="statistical__table-text">Người đọc vi phạm</h4>
+                            <table>
+                              <thead>
+                                <th>#</th>
+                                <th>Tên người đọc</th>
+                                <th>Sách mượn</th>
+                                <th>Lý do vi phạm</th>
+                                <th>Ngày vi phạm</th>
+                                <th>Số tiền phải nộp</th>
+
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>23</td>
+                                  <td>Bùi Văn Hào</td>
+                                  <td>Tư Tưởng Hồ Chí Minh</td>
+                                  <td>Quá Hạn Mượn</td>
+                                  <td>2022-08-03</td>
+                                  <td>50.000đ</td>
+                                </tr>
+                                <tr>
+                                  <td>33</td>
+                                  <td>Mạnh</td>
+                                  <td>Kĩ Thuật Lập Trình</td>
+                                  <td>Làm Rách Bìa</td>
+                                  <td>2022-09-01</td>
+                                  <td>60.000đ</td>
+                                </tr>
+                                <tr>
+                                  <td>65</td>
+                                  <td>Việt</td>
+                                  <td>Toán Rời Rạc</td>
+                                  <td>Làm Mất</td>
+                                  <td>2022-10-06</td>
+                                  <td>70.000đ</td>
+                                </tr>
+                              </tbody>
+                            </table>
+            
+                        </div>
+                        <div class="statistical__table">
+                            <h4 class="statistical__table-text">Lượng sách được thuê theo tháng</h4>
+                            <div class="chart-layout">
+                              <div class="chart-layout__item" style="--percent: 10%">10%</div>
+                              <div class="chart-layout__item" style="--percent: 20%">20%</div>
+                              <div class="chart-layout__item" style="--percent: 40%">40%</div>
+                              <div class="chart-layout__item" style="--percent: 90%">90%</div>
+                              <div class="chart-layout__item" style="--percent: 80%">80%</div>
+                              <div class="chart-layout__item" style="--percent: 40%">40%</div>
+                              <div class="chart-layout__item" style="--percent: 10%">10%</div>
+                              <div class="chart-layout__item" style="--percent: 20%">20%</div>
+                              <div class="chart-layout__item" style="--percent: 69%">69%</div>
+                              <div class="chart-layout__item" style="--percent: 96%">96%</div>
+                              <div class="chart-layout__item" style="--percent: 60%">60%</div>
+                              <div class="chart-layout__item" style="--percent: 88%">88%</div>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                    
+            </div>
+        </div>
+        
+        <footer id="footer">
+            <div class="footer-content">
+                <a href="">
+                  <img src="https://www.adazing.com/wp-content/uploads/2019/02/open-book-clipart-07-300x300.png" alt="" class="footer-logo">
+                  UTC Library Management
+                </a>
+                <div class="footer-rule">
+                  <a href="#" class="footer-item">
+                    <span class="footer-text">Chính sách khách hàng thường xuyên | </span>
+                  </a>
+                  <a href="#" class="footer-item">
+                    <span class="footer-text">Chính sách bảo mật thông tin | </span>
+                  </a>
+                  <a href="#" class="footer-item">
+                    <span class="footer-text">Điều khoản sử dụng</span>
+                  </a>
+                </div>
+                <div class="footer-infor">
+                  <p>Giấy CNĐKDN: 0302575928, đăng ký lần đầu ngày 02/05/2008, đăng ký thay đổi lần thứ 10 ngày 30/03/2018, cấp bởi Nhà cái đến từ Châu Âu</p>
+                  <p>Địa chỉ: 502A3 UNIVERSITY OF TRANSPORT AND COMMUNICATIONS</p>
+                  <p>Hotline: 19006996 </p>   
+                  <p>COPYRIGHT © UTC - ALL RIGHTS RESERVED.</p>
+                </div>  
+              </div>
+        </footer>
+    </div>
+    <!-- js -->
+    <script>
+        const nav = document.querySelector('nav');
+        const toggle__menu = document.querySelector('.toggle__menu');
+        const content = document.querySelector('.content');
+
+        toggle__menu.onclick = function () {
+          nav.classList.toggle('hide');
+          content.classList.toggle('expand')
+        }
+    </script>
+</body>
+</html>
